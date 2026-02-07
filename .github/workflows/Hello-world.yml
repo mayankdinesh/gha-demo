@@ -3,11 +3,20 @@ name: Hello world
 #trigger
 on: workflow_dispatch
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello step
-        run: |
-          echo "This is line one"
-          echo "this is line two"
+      - name: build step
+        run: echo "A demo build"
+  test:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Test phase
+       run: echo "Running test case"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the app
+        run: echo "Deploying the app"
+  
   
