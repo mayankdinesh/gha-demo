@@ -1,0 +1,11 @@
+#workflow name
+name: Hello world
+#trigger
+on: workflow_dispatch
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello step
+        run: echo "Welcome to GHA"
+  
