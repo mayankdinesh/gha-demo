@@ -1,7 +1,17 @@
 #workflow name
 name: Hello world
 #trigger
-on: push
+on: 
+  push:
+    branches:
+      - main
+      - develop
+      - 'release/**'
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main    
 jobs:
   build:
     runs-on: ubuntu-latest
