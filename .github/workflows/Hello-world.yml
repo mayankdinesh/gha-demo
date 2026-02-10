@@ -9,7 +9,7 @@ jobs:
       - name: chckout the code
         uses: actions/checkout@v4
       - name: print index.html
-        run: cat.index.html
+        run: cat index.html
 
   
   
