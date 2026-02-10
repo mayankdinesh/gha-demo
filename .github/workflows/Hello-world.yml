@@ -1,13 +1,15 @@
 #workflow name
-name: Hello world
+name: GIThub action name
 #trigger
 on: push
 jobs:
-  build:
+  action-demo:
     runs-on: ubuntu-latest
     steps:
-      - name: build step
-        run: echo "Hello, ${{secrets.DOCKER_PASSWORD}}"
+      - name: chckout the code
+        uses: actions/checkout@v4
+      - name: print index.html
+        run: cat.index.html
 
   
   
