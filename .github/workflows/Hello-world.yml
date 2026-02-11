@@ -3,7 +3,7 @@ name: Demo-for-actions
 on: push
 jobs:
    checkout-the-code:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
        - name: checkout-repo
          run: actions/checkout@V4
