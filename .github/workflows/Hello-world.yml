@@ -1,15 +1,11 @@
-#workflow name
-name: GIThub action name
-#trigger
+name: Demo-for-actions
+
 on: push
 jobs:
-  action-demo:
-    runs-on: ubuntu-latest
+   checkout-the-code:
+    runs-on: ubuntu-20.04
     steps:
-      - name: chckout the code
-        uses: actions/checkout@v4
-      - name: print index.html
-        run: cat index.html
-
-  
-  
+       - name: checkout-repo
+         run: actions/checkout@V4
+       - name: print the index.html
+         run: cat index.html
