@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
        - name: checkout-repo
-         uses: actions/checkout@V4
+         uses: actions/checkout@v4
        - name: print the index.html
          run: cat index.html
+
+
