@@ -3,9 +3,9 @@ name: Demo-for-actions
 on: push
 jobs:
    checkout-the-code:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
        - name: checkout-repo
-         run: actions/checkout@V4
+         uses: actions/checkout@V4
        - name: print the index.html
          run: cat index.html
