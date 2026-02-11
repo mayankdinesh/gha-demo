@@ -1,13 +1,11 @@
-name: Demo-for-actions
-
+name: action for demo
 on: push
 jobs:
-   checkout-the-code:
-    runs-on: ubuntu-24.04
+  depoly:
+    runs-on: ubuntu-latest
     steps:
-       - name: checkout-repo
-         uses: actions/checkout@v4
-       - name: print the index.html
-         run: cat index.html
-
-
+      - name: checkout index.html
+        uses: actions/checkout@v4
+      - name: print index.html
+        run: cat index.html
+  
